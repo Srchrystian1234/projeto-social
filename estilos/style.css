@@ -59,3 +59,16 @@ iframe#tela{
     height: 471px;/* altura de 471px*/
     /* apos isso a tela ta meio bagunçada ,vamos fazer que a tela fique cover la no html, nessa parte que eu ainda to comentando , ainda ta bagunçado, tem que colocar cover no home*/
 }
+/* vamos fazer um configuração paras as imagens das rede sociasi dessa forma que vai buscar a tag img*/
+section#redes-sociais img{
+    /* vamos colocar so o width pq assim que configura a largura a altura automaticamente segue a mesma*/
+    width: 60px;
+    /* vamos separa ela um pouquinho*/
+    margin: 10px; /* e dar um afastamento de 10px*/
+    border-radius: 50%; /* para fazer o arrendodamento*/
+    transition: 2s ;
+}
+section#redes-sociais img:hover{
+    box-shadow: 1px 1px 1px  rgba(0, 0, 0, 0.411);
+    width: 70px;
+}
