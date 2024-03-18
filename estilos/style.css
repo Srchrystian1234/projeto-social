@@ -45,7 +45,7 @@ section#telefo{
   /*  background-color: blue; esse azul ficou somente pra configurar a largura e altura*/
    
     /* agora vamos colocar a imagem do telefone*/
-    background-image: url(../imagens/frame-iphone.png);/* colocando a imagem
+    background-image: url(../imagens/frame-iphone.png);/* colocando a imagem*/
     background-repeat: no-repeat;/* configurei para nao repeti*/
     
 }
