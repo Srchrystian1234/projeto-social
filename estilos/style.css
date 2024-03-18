@@ -2,27 +2,50 @@
 
 
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0px; /* vamos zerar o margem*/
+    padding: 0px;/* zerado tamnem*/
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/* html e body vamos configuração basica*/
 html,body{
-    height: 100vh;
-    width: 100vw;
+    height: 100vh; /* altura*/
+    width: 100vw;/* largura */
     background-color: black;
 }
+/* configurar o fundo madeirado do meu site, colocaar loog no body(corpo)*/
+body{
+    background-image:url(../imagens/fundo-madeira.jpg) ;/* colocando o fundo madeirado */
+    /*colocar pra ele nao repeti*/
+    background-repeat: no-repeat;
+    /*colocar ele em cima e no meio */
+    background-position: top center;/* posicionamento */
+    /*vamos mexes no tamanho dlee*/
+    background-size: cover;
+    /* vamos fixar pra nao tem rolagem */
+    background-attachment: fixed;/*fixa a imagem no fundo da tela*/
 
-main{
-    height: 100vh;
-    position: relative;
-    background-color: aquamarine;
 }
+main{ /* parte principal do site*/
+    position: relative;/* posicao relativa ao site fixa basicamente*/ 
+    height: 100vh;/*configuraçaõ do tamanho do site
+    e ele ficou 100% coberto pq o paddin e margim estao zerados*/
+   
+   
+}
+/* vamos começar as configurações do celular.
+eu quero sempre que a parte verde fique em baixo da parte azul,por isso sempre coloco a position :relative e apos isso position :Absolute*/
 section#telefo{
-    position: absolute;
-    background-color: antiquewhite;
-    height: 500px;
-    width: 200px;
+    position: absolute;/*a parti do momento que eu coloco o posicionamente absoluto , eu consigo configurar o top(topo) e o seu left (esquerdo) e ele pega e coloca a ponta do selection no meio e pra isso vamos usar o translate pra centralizar*/
     top: 50%;
-    left: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* no translate a primeira % é pra esquerda e a segunda é pra cima, e por isso quando aumenta e dimunui ele continua respposivo*/
+    height: 627px;/* esssa altura e largura vai de acordo coma  imagem*/
+    width: 311px;
+  /*  background-color: blue; esse azul ficou somente pra configurar a largura e altura*/
+   
+    /* agora vamos colocar a imagem do telefone*/
+    background-image: url(../imagens/frame-iphone.png);/* colocando a imagem
+    background-repeat: no-repeat;/* configurei para nao repeti*/
+    
 }
