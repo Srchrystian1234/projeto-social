@@ -49,3 +49,13 @@ section#telefo{
     background-repeat: no-repeat;/* configurei para nao repeti*/
     
 }
+iframe#tela{
+    /*apos colocar a imagem no home.html dentro do iframe,vamos configurar a imagem para ficar dentro da tela do ceular parte preta*/
+    position: relative;/* colocando a posicao relativa para pode mexer no top e no left*/
+    /* fazendo o posicionamento ficar certinho dentro do celualr com top e left*/
+    top: 80px;/*80 pra cima */
+    left: 22px;/* 22px pra esquerda ficou boa dentro do celular*/
+    width: 269px;/* o tamanho que ficou dentro do celular foi a largura de 269px*/
+    height: 471px;/* altura de 471px*/
+    /* apos isso a tela ta meio bagunçada ,vamos fazer que a tela fique cover la no html, nessa parte que eu ainda to comentando , ainda ta bagunçado, tem que colocar cover no home*/
+}
