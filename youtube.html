@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube</title>
+</head>
+<style>
+    /*vamos tirar todo a parte branca da margin e padding */
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+    }
+    /* vamos fazer uma configuração pra a img e outra para o link*/
+    /* esconder barra de rolagem*/
+    ::-webkit-scrollbar{ /* scrollbar é a barra de rolagem*/
+        width: 0px;
+        height: 0px;
+    }
+    img{
+        /* vamso deixar a img do tamanho total da tela em largura ,mas tem um pouquinho de rolagem ,vamos esconder*/
+        width: 100vw;
+        
+        /* sempre colocar ela na largura completa quando for usar o iframe */
+
+    }
+    /* configuraçaõ padrao pro link de acesso */
+    a{
+        display: block;/* para deixa em baixo da img*/
+        background-color: darkred;/* uma cor de fundo*/
+        color: white; /* cor da letra*/
+        padding: 19px; /* um paddind*/
+        text-align: center;/* colocar no centro*/
+        font-weight: bolder;/* colocar negrito*/
+        text-decoration: none;/*sem sublinhado*/
+        color: black;
+        background-size: cover;
+        transition: .7s;
+    }
+    a:hover{
+       background-color: red;
+       
+    }
+</style>
+<body>
+    <img src="imagens/tela-youtube.png" alt="youtube-tela">
+    <a href="https://www.youtube.com/" target="_blank"> Acesse</a>
+</body>
+</html>
